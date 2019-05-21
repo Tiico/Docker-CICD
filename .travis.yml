@@ -13,3 +13,11 @@ install:
 script:
   - npm run lint
   - npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: 1f1ab659-150b-44e2-877d-d9644f90073d
+  app: Docker-CICD
+  on:
+    repo: tiico/Docker-CICD
+    branch: master
