@@ -1,20 +1,20 @@
 language: node_js
 node_js:
-  - "8"
-  - "10"
-  - "12"
-services: mongodb  
-cache:  
+- '8'
+- '10'
+- '12'
+services: mongodb
+cache:
   directories:
-    - "node_modules"
+  - node_modules
 sudo: false
 install:
-  - npm install
+- npm install
 script:
-  - npm run lint
-  - npm test
+- npm run lint
+- npm test
 deploy:
   provider: heroku
   api_key:
-    secure: iT2RTzO-hE_yOBtxIzfVmA
+    secure: vfLQQP+h/Cq54v0zQBEGBTEbTrWRFriBKhAhgQz03+j7Dih7g3Uc2yEQuBTXjH+jeqt6JYuBLnvGTk6TrKcn6M2SOMCWsc4Va7XCK0VqV5CpMXrxJW8osUmhwlIhdeIas/DhTnL0Mi+4CcsxIlvscOSvcaSZ3QoQ53w17/oGeoFCDewwbVMsh75vyLoZdLd+McmlOq2Ywe+aUYeW6bFO88U0DTwqkIq/BniqZWDJOdnfDTewyggwUMOuwBzV+496i7+RVJcO0WWMY7j5SZ/zoNhGk+b+IYCNRWLxCYynWBpgX+cr8f/Xrn9Ij0Jr8KIOJ2sQrD76vI5XJPN6nkCh17pDF7GlQLTKrNn/hgxNwmGTHrbcApEg6IFKAgg/X7CFEdwiHRKwwkVVhJuR1p9PP9l9Vt2wEqzJnCa/gO8oddWtNWWzPWAr+f0G+KiwOTnnzsEK/ceMyXih6x7oZ7cF7ME3nsSA5BLb292y/JSlYLXuiBz9bVTfbJCVOqJQGwThmHWLm8sU5FShaCf2sxDmuiC4A/4Rkob71ygDEcHH5DiXJ7y/vlEEmazszjpQoOH05T45XMtoX7q64I2CscHoGXg9o4SLXXsUrdzdaJFGBGWaKSO8DLnS4pXDTl1hQ3bvXy5FV8IeN3+56DIh7blbxMMVOCmMHnzgH8empvW7Lxo=
   app: Docker-CICD
