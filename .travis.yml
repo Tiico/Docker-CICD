@@ -19,5 +19,5 @@ deploy:
     secure: 1f1ab659-150b-44e2-877d-d9644f90073d
   app: Docker-CICD
   on:
-    repo: Docker-CICD
+    repo: docker-ci-cd
     branch: master
