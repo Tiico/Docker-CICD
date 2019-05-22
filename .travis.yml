@@ -16,5 +16,5 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: 1f1ab659-150b-44e2-877d-d9644f90073d
+    secure: iT2RTzO-hE_yOBtxIzfVmA
   app: Docker-CICD
